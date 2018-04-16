@@ -1,0 +1,29 @@
+<div class="navbar-fixed" id="fixer">
+    <nav class="light-blue lighten-1 resposive-img">
+      <a href="#" class="brand-logo center"><span class="brand-logo1">Delivery</span></a>
+      <a ng-click="logout()" class="brand-logo4 right"><span class="fa fa-sign-out fa-lg"></span></a><a href="" class="brand-logo5 right"><span class="fa fa-search fa-lg" style="padding-left:13px;"></span></a>
+     </nav>
+</div>
+
+<div class="col s12 m12">
+	<div class="profile-header header-adjust">
+	  <img src="img/shopping.jpg" class="img-profile">
+	  <img src="icon.png" class="img-icon center-block">
+	  <span class="text-title center-block center-align white-text"><h5>Gerald Austria</h5><h6>Delivery Crew</h6></span>
+	</div>
+</div>
+
+<div class="collection">
+    <a ng-repeat="w in delivers" class="collection-item">{{w.p_id}}<br><span>{{w.m_id}}</span><span data-ng-click="setDeliver(w.pr_id)" ng-if="w.p_type==0" class="pending badge"></span>
+    <span ng-if="w.p_type==1" class="delivered badge"></span></a>
+  </div>
+
+<div class="footer" style="position:fixed;bottom:0px;width:100%;">
+  <div class="col s12">
+      <ul class="tabs">
+            <li class="tab col s6 waves-effect waves-light light-blue lighten-3" ng-click="go('/deliveryhome')" style="color:black;"><span class="fa fa-home"></span>home</li>
+            
+            <li class="tab col s6 waves-effect waves-light light-blue lighten-3" ng-click="go('/orders')" style="color:black;"><span class="fa fa-cart-plus"></span>Orders</li>
+      </ul>
+  </div>     
+</div>

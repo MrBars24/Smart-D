@@ -1,0 +1,35 @@
+<div class="background light-blue lighten-2" style="position:fixed;width:100%;height:100%;">
+
+<div class="valign-wrapper">
+	<div class="containers" style="position:absolute;width:100%;top:10%;left:0">
+        <form class="col s12 center-block" style="max-width:300px;" ng-submit="submit()">
+            <img class="logo-login" src="icon.png"><div class="row">
+            <div class="input-field col s12">
+              <input id="first_name" type="text" class="validate" ng-model="username" required/>
+              <label for="first_name">Username</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="first_name" type="password" class="validate" ng-model="password" required/>
+              <label for="last_name">Password</label>
+            </div>
+            
+            <button ng-click="submitCustomer()" class="btn waves-effect waves-light" style="display:block;margin-left:auto;margin-right:auto;background:#E0024D" type="submit" name="action">customer
+                <i class="fa fa-sign-in"></i>
+            </button>
+            <div class="col s12 center" style="margin:5px;">
+              <span>or</span>
+            </div>
+            <div class="col s12 center" style="margin:5px;text-decoration:underline;">
+              <span>sign-in</span>
+            </div>
+
+              <div class="col s12">
+              <button ng-click="submitDelivery()" class="btn waves-effect waves-light" style="display:block;margin-left:auto;margin-right:auto;background:#E0024D" type="submit" name="action">Delivery Crew
+                <i class="fa fa-sign-in"></i>
+            </button>
+              </div>
+            
+            </form>
+	</div>
+</div>
+</div>
